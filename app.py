@@ -5,10 +5,10 @@ import faiss
 import pandas as pd
 from docx import Document
 import time
+import os
 
 
-with open("api_key.txt", "r") as key_file:
-    api_key = key_file.read().strip()
+api_key = st.secrets["MISTRAL_API_KEY"]
 
 client = Mistral(api_key=api_key)
 
