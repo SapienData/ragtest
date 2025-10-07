@@ -18,7 +18,7 @@ with open(file_path, "r", encoding="utf-8") as f:
     text = f.read()
 
 
-chunk_size = 4000
+chunk_size = 4096
 chunks = [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
 
 
@@ -37,7 +37,7 @@ def embed_chunks(chunks):
     for chunk in tqdm.tqdm(chunks, desc="Embedding chunks"):
         emb = get_text_embedding(chunk)
         embeddings.append(emb)
-        time.sleep(1.2)
+        time.sleep(1.05)
     return np.array(embeddings)
 
 text_embeddings = embed_chunks(chunks)
