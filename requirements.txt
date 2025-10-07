@@ -1,0 +1,7 @@
+streamlit
+numpy
+faiss-cpu
+pandas
+python-docx
+mistralai
+tqdm

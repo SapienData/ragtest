@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+*.pyc
+api_key.txt
+app1.py
+excel.py
+Chakras_-Energy-Centers-of-Transformation (1).pdf
+source1.docx
+test.py
+*.log
