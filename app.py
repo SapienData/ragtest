@@ -13,10 +13,6 @@ api_key = st.secrets["MISTRAL_API_KEY"]
 client = Mistral(api_key=api_key)
 
 
-""" docx_path = "source1.docx"  
-doc = Document(docx_path)
-text = "\n".join([para.text for para in doc.paragraphs])  """
-
 file_path = "source.txt"
 with open(file_path, "r", encoding="utf-8") as f:
     text = f.read()
