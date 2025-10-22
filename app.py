@@ -47,7 +47,7 @@ index = faiss.IndexFlatL2(d)
 index.add(text_embeddings)
 
 
-st.title("Local RAG Q&A Interface")
+st.title("RAG Q&A Interface")
 
 user_question = st.text_input("Ask a question:")
 
