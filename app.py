@@ -13,7 +13,7 @@ api_key = st.secrets["MISTRAL_API_KEY"]
 client = Mistral(api_key=api_key)
 
 
-file_path = "miningpoc.txt"
+file_path = "campaign.txt"
 with open(file_path, "r", encoding="utf-8") as f:
     text = f.read()
 
